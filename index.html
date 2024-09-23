@@ -1,0 +1,1765 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Website</title>
+
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="/Images/fave_icon.png"
+      type="image/x-icon"
+    />
+
+    <!-- css -->
+    <link rel="stylesheet" href="/css/slick.min.css" />
+    <link rel="stylesheet" href="/css/easy.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/responsive.css" />
+    <!-- Scroll.css cnd [aos.css] -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
+
+    <!-- Slick carousel cdn -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <!-- fontawesome cdn for icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="header-index">
+        <!--======== Header section ========-->
+        <header>
+          <nav class="container navbar">
+            <div class="container-nav flex">
+              <!-- site logo -->
+              <a href="/" class="navbar-logo">
+                <img src="Images/logo.png" alt="" />
+              </a>
+              <button onclick="openNav()" class="navbar-toggle" type="button">
+                <span><i class="fa-solid fa-bars"></i></span>
+              </button>
+
+              <!-- menus -->
+              <ul class="navbar-nav flex">
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/" class="nav-link">About</a></li>
+                <li><a href="/" class="nav-link">Contact</a></li>
+                <li class="dropdown">
+                  <a href="/" class="nav-link dropdown-toggle">Pages</a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/" class="dropdown-item">Services</a></li>
+                    <li><a href="/" class="dropdown-item">Pricing Plan</a></li>
+                    <li><a href="/" class="dropdown-item">Portfolio</a></li>
+                    <li><a href="/" class="dropdown-item">Team</a></li>
+                    <li><a href="/" class="dropdown-item">Testimonials</a></li>
+                    <li><a href="/" class="dropdown-item">FAQ</a></li>
+                    <li><a href="/" class="dropdown-item">Blog</a></li>
+                    <li><a href="/" class="dropdown-item">Coming Soon</a></li>
+                    <li><a href="/" class="dropdown-item">404</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-right flex">
+              <p>Call Us : <span>+123 456 7890</span></p>
+              <!-- header buttons-->
+              <i
+                onclick="openSearch()"
+                class="fa-solid fa-magnifying-glass"
+              ></i>
+              <i class="fa-solid fa-bars" onclick="openSidebar()"></i>
+            </div>
+          </nav>
+          <!-- sidebar -->
+          <aside id="mySidepanel" class="sidepanel">
+            <div class="sidebar flex">
+              <a href=""> <img src="Images/logo.png" alt="logo" /></a>
+              <button
+                onclick="closeNav()"
+                type="button"
+                class="closebtn btn_hover1"
+              >
+                <i class="fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div>
+              <!-- sidebar menus -->
+              <ul>
+                <li><a href="/" class="nav-link active">Home</a></li>
+                <li><a href="/" class="nav-link">About</a></li>
+                <li><a href="/" class="nav-link">Contact</a></li>
+                <li><a href="/" class="pages">More</a></li>
+                <li class="collapse-btn p-relative">
+                  <a href="/">
+                    <svg
+                      class="svg-inline--fa fa-plus"
+                      aria-hidden="true"
+                      focusable="false"
+                      data-prefix="fas"
+                      data-icon="plus"
+                      role="img"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      data-fa-i2svg=""
+                    >
+                      <path
+                        fill="currentColor"
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                      ></path>
+                    </svg>
+                  </a>
+                  <div class="collapse" id="pages">
+                    <ul>
+                      <li><a href="/" class="nav-link">Services</a></li>
+                      <li>
+                        <a href="/" class="nav-link">Pricing Plan</a>
+                      </li>
+                      <li><a href="/" class="nav-link">Portfolio</a></li>
+                      <li><a href="/" class="nav-link">Team</a></li>
+                      <li>
+                        <a href="/" class="nav-link">Testimonials</a>
+                      </li>
+                      <li><a href="/" class="nav-link">FAQ</a></li>
+                      <li><a href="/" class="nav-link">Blog</a></li>
+                      <li><a href="/" class="nav-link">Coming Soon</a></li>
+                      <li><a href="/" class="nav-link">404</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </aside>
+
+          <!-- searchbar -->
+          <div id="search-bar">
+            <div onclick="closeSearch()" class="btn_hover1">
+              <i class="fa-solid fa-xmark"></i>
+            </div>
+            <form action="#" method="search">
+              <input type="search" required placeholder="Search..." />
+              <button type="submit" class="btn_hover1">Search</button>
+            </form>
+          </div>
+
+          <!-- right sidebar -->
+          <section class="header-right-sidebar" id="right_side">
+            <div class="flex flex-sb">
+              <img src="Images/right-side-logo.png" alt="" />
+              <button
+                class="close_rightsidebar fa-solid fa-xmark"
+                onclick="closeSidebar()"
+              ></button>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi quod
+              dolor, rem explicabo deserunt molestias laudantium tenetur
+            </p>
+            <a href="" class="btn_hover1">Discover More</a>
+            <hr />
+            <h4>Connected details</h4>
+            <ul>
+              <li>
+                <h5>Email</h5>
+                <a href="#" class="text-lowercase">JohnDoe@gmail.com</a>
+              </li>
+              <li>
+                <h5>Phone</h5>
+                <a href="#">+123-456-7890</a>
+              </li>
+              <li>
+                <h5>Work</h5>
+                <a href="#">Office Hours: 8AM - 11PM Sunday - Weekend Day</a>
+              </li>
+            </ul>
+          </section>
+        </header>
+
+        <!-- ======== Hero section ======== -->
+        <section class="hero">
+          <div class="container" data-aos="zoom-in">
+            <div>
+              <div class="hero-social-icon">
+                <a href="">
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="orangeGradient"
+                        gradientTransform="rotate(42)"
+                      >
+                        <stop offset="0%" stop-color="#f57c48" />
+                        <stop offset="100%" stop-color="#fa982f" />
+                      </linearGradient>
+
+                      <linearGradient
+                        id="hoverGradient"
+                        gradientTransform="rotate(45)"
+                      >
+                        <stop offset="0%" stop-color="#7436bb" />
+                        <stop offset="100%" stop-color="#b520a3" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      class="social-icon-path"
+                      d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848
+                    c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588
+                    l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+                      fill="url(#orangeGradient)"
+                    />
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      class="social-icon-path"
+                      d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                      fill="url(#orangeGradient)"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="">
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      class="social-icon-path"
+                      d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z"
+                      fill="url(#orangeGradient)"
+                    ></path>
+                  </svg>
+                </a>
+                <hr />
+              </div>
+              <div class="center-data flex flex-col">
+                <h1>DIGITAL SERVICES</h1>
+                <h3>BUILDING YOUR EMPIRE DIGITALLY</h3>
+                <div class="center-btn flex gap-15 mt-1">
+                  <a href="/" class="btn_hover1">Get Started</a>
+                  <a href="/" class="btn_hover2">Discover More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <!-- ======== Card section ======== -->
+      <section class="feature">
+        <div class="container">
+          <div class="flex">
+            <div class="header-card" data-aos="fade-up">
+              <div>
+                <figure>
+                  <img
+                    class="figure_img1"
+                    src="Images/icon/feature1.png"
+                    alt=""
+                  />
+                </figure>
+                <h4>CUSTOMIZED SOLUTIONS</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima asperiores qui ipsam saepe? Recusandae numquam culpa
+                  inventore voluptas velit
+                </p>
+              </div>
+            </div>
+            <div class="header-card" data-aos="fade-down">
+              <div>
+                <figure>
+                  <img src="Images/icon/feature2.png" alt="" />
+                </figure>
+                <h4>ROI-DRIVEN APPROCH</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima asperiores qui ipsam saepe? Recusandae numquam culpa
+                  inventore voluptas velit
+                </p>
+              </div>
+            </div>
+            <div class="header-card" data-aos="fade-up">
+              <div>
+                <figure>
+                  <img src="Images/icon/feature3.png" alt="" />
+                </figure>
+                <h4>CREATIVE SOLUTIONS</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima asperiores qui ipsam saepe? Recusandae numquam culpa
+                  inventore voluptas velit
+                </p>
+              </div>
+            </div>
+            <div class="header-card" data-aos="fade-down">
+              <div>
+                <figure>
+                  <img src="Images/icon/feature4.png" alt="" />
+                </figure>
+                <h4>EXPERT TEAM</h4>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Minima asperiores qui ipsam saepe? Recusandae numquam culpa
+                  inventore voluptas velit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Logoipsum section ======== -->
+      <section class="logoipsum">
+        <div class="container">
+          <div class="flex flex-col gap-2">
+            <hr class="hr1" />
+            <h3 class="mb-15" data-aos="zoom-in">OUR CLIENTS</h3>
+          </div>
+          <div class="logoipsum-slider sliderlogo" data-aos="zoom-in">
+            <figure>
+              <img src="Images/home//logoipsum1.svg" alt="logoipsum" />
+            </figure>
+            <figure>
+              <img src="Images/home//logoipsum2.svg" alt="logoipsum" />
+            </figure>
+            <figure>
+              <img src="Images/home//logoipsum3.svg" alt="logoipsum" />
+            </figure>
+            <figure>
+              <img src="Images/home//logoipsum4.svg" alt="logoipsum" />
+            </figure>
+            <figure>
+              <img src="Images/home//logoipsum5.svg" alt="logoipsum" />
+            </figure>
+            <figure>
+              <img src="Images/home//logoipsum6.svg" alt="logoipsum" />
+            </figure>
+          </div>
+          <hr class="hr2" />
+        </div>
+      </section>
+
+      <!-- ======== About section ======== -->
+      <section class="about">
+        <div class="container">
+          <div class="about-data flex-sb">
+            <div class="w-50" data-aos="fade-up">
+              <div class="flex about-title gap-1">
+                <hr />
+                <h5>ABOUT US</h5>
+              </div>
+              <h2>Expolore our services and boost your online presence</h2>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Tempore perferendis esse assumenda numquam consequuntur
+                voluptates molestias necessitatibus aspernatur libero maxime,
+                odit delectus enim, labore quos consectetur perspiciatis non
+                dolorum? Sit?
+              </p>
+              <div class="about-checked flex gap-1 mt-15">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z"
+                    fill="url(#orangeGradient)"
+                    stroke="url(#orangeGradient)"
+                    stroke-width="5"
+                  ></path>
+                </svg>
+                <h5>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vitae
+                </h5>
+              </div>
+              <div class="about-checked flex gap-1 mt-15">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="100"
+                  height="100"
+                  viewBox="0 0 50 50"
+                >
+                  <path
+                    d="M 41.9375 8.625 C 41.273438 8.648438 40.664063 9 40.3125 9.5625 L 21.5 38.34375 L 9.3125 27.8125 C 8.789063 27.269531 8.003906 27.066406 7.28125 27.292969 C 6.5625 27.515625 6.027344 28.125 5.902344 28.867188 C 5.777344 29.613281 6.078125 30.363281 6.6875 30.8125 L 20.625 42.875 C 21.0625 43.246094 21.640625 43.410156 22.207031 43.328125 C 22.777344 43.242188 23.28125 42.917969 23.59375 42.4375 L 43.6875 11.75 C 44.117188 11.121094 44.152344 10.308594 43.78125 9.644531 C 43.410156 8.984375 42.695313 8.589844 41.9375 8.625 Z"
+                    fill="url(#orangeGradient)"
+                    stroke="url(#orangeGradient)"
+                    stroke-width="5"
+                  ></path>
+                </svg>
+                <h5>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Vitae
+                </h5>
+              </div>
+              <div class="flex mt-3 gap-1">
+                <a href="#" class="btn_hover1">Get Started</a>
+                <a href="#" class="btn_hover2">Get Started</a>
+              </div>
+            </div>
+            <div class="w-50 about-imgs flex flex-center" data-aos="fade-down">
+              <div>
+                <figure>
+                  <img src="Images/home/about.png" alt="" />
+                </figure>
+              </div>
+              <div class="ab-count flex flex-center">
+                <div class="flex">
+                  <h2>12</h2>
+                  <h2>+</h2>
+                </div>
+                <p>year of exerience</p>
+              </div>
+              <div class="about-hr flex gap-1">
+                <hr />
+                <h6>Who we are</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Gallary section ======== -->
+      <section class="portfolio">
+        <div class="portfolio-1">
+          <div class="container">
+            <div class="porto-center" data-aos="fade-up">
+              <div class="w-50">
+                <div class="flex gap-1">
+                  <hr class="gallary-hr1" />
+                  <h5>PORTFOLIO</h5>
+                </div>
+
+                <h2 class="mt-15">Our Latest Projects</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  explicabo quas reiciendis, animi dicta nulla?
+                </p>
+              </div>
+
+              <div class="flex w-100 flex-end">
+                <a href="/" class="btn_hover2"> View All Projects </a>
+              </div>
+              <hr class="mt-3" />
+            </div>
+          </div>
+        </div>
+
+        <div class="gallary">
+          <div class="ga-bg"></div>
+          <!-- overlay -->
+          <span></span>
+          <div class="container" data-aos="fade-up">
+            <!-- tab links -->
+            <div class="tab mb-15">
+              <button class="tablinks active" onclick="open_img(event, 'all')">
+                All
+              </button>
+              <button class="tablinks" onclick="open_img(event, 'design')">
+                DESIGN
+              </button>
+              <button class="tablinks" onclick="open_img(event, 'development')">
+                DEVELOPMENT
+              </button>
+              <button class="tablinks" onclick="open_img(event, 'branding')">
+                BRANDING
+              </button>
+              <button class="tablinks" onclick="open_img(event, 'ui_ux')">
+                UX/UI
+              </button>
+              <button class="tablinks" onclick="open_img(event, 'marking')">
+                MARKETING
+              </button>
+              <button class="tablinks" onclick="open_img(event, 'seo')">
+                SEO
+              </button>
+            </div>
+
+            <!-- tab content -->
+            <div id="all" class="tabcontent" style="display: block">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/all-gallary-1.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/all-gallary-2.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/all-gallary-3.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/all-gallary-4.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/all-gallary-5.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/all-gallary-6.png" alt="sm_img" />
+                      <img src="Images/home/all-gallary-7.png" alt="sm_img" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/all-gallary-8.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="design" class="tabcontent">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/design-gallary-3.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/design-gallary-6.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/design-gallary-7.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/design-gallary-1.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/design-gallary-2.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/design-gallary-4.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="development" class="tabcontent">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/dev-gallary-3.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/dev-gallary-4.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/dev-gallary-5.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/dev-gallary-6.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/dev-gallary-7.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/dev-gallary-8.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="branding" class="tabcontent">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/brand-gallary-6.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/brand-gallary-8.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="ui_ux" class="tabcontent">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/ui-ux-gallary-3.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/ui-ux-gallary-4.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="marking" class="tabcontent">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/market-gallary-1.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/market-gallary-2.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/market-gallary-3.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/market-gallary-4.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="seo" class="tabcontent">
+              <div class="flex flex-center">
+                <div class="flex w-100">
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/seo-gallary-4.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/seo-gallary-5.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/seo-gallary-6.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-66">
+                    <figure>
+                      <img src="Images/home/seo-gallary-7.png" alt="" />
+                    </figure>
+                  </div>
+                  <div class="w-33">
+                    <figure>
+                      <img src="Images/home/seo-gallary-8.png" alt="" />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- gallary -->
+            <div class="gallary-hr flex flex-end gap-1 mt-15">
+              <h6>Creative Solution</h6>
+              <hr />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Services section ======== -->
+      <section class="service">
+        <div class="service-1">
+          <div class="container">
+            <div class="service-data" data-aos="fade-down">
+              <div class="w-66">
+                <div class="flex gap-1">
+                  <hr class="service_hr1" />
+                  <h5>SERVICES</h5>
+                </div>
+                <h2 class="mt-15">Services We offer</h2>
+                <p class="mb-3">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+                  mollitia cumque reprehenderit dignissimos recusandae
+                  reprehenderit dignissimos nostrum fugiat?
+                </p>
+              </div>
+              <div class="w-33 mt-15 flex flex-end">
+                <a href="/" class="btn_hover2">View All Services</a>
+              </div>
+              <hr />
+            </div>
+            <div class="flex s-card gap-1 mt-15">
+              <div class="service-card" data-aos="fade-down">
+                <figure>
+                  <img src="Images/icon/slider1.png" alt="slider1" />
+                </figure>
+                <h3>UX/UI DESIGN</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, dicta illum! Magnam fuga saepe at provident quam hic.
+                </p>
+                <a href="/"
+                  >Read more <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="service-card" data-aos="fade-up">
+                <figure>
+                  <img src="Images/icon/slider2.png" alt="slider2" />
+                </figure>
+                <h3>Development</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, dicta illum! Magnam fuga saepe at provident quam hic.
+                </p>
+                <a href="/"
+                  >Read more <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="service-card" data-aos="fade-down">
+                <figure>
+                  <img src="Images/icon/slider3.png" alt="slider3" />
+                </figure>
+                <h3>Visual Design</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Ipsum, dicta illum! Magnam fuga saepe at provident quam hic.
+                </p>
+                <a href="/"
+                  >Read more <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Experience section ======== -->
+      <section class="experience">
+        <div class="container">
+          <div class="flex flex-wrap exp-center" data-aos="fade-up">
+            <div class="w-66">
+              <div class="flex gap-1">
+                <hr class="exp-hr1 m-0" />
+                <h5>Experience</h5>
+              </div>
+              <h2>Grow Your Online Presnce.</h2>
+              <p class="mt-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
+                laborum est ex voluptas minus. Sapiente facilis velit corporis
+                architecto esse.
+              </p>
+            </div>
+            <div class="w-33 mt-3 flex flex-end">
+              <a href="/" class="btn_hover1">Get Started</a>
+            </div>
+          </div>
+          <div class="flex flex-sb">
+            <div class="w-50 p-relative flex flex-center" data-aos="zoom-in">
+              <div class="experience_mask">
+                <figure><img src="Images/home/experience.png" alt="" /></figure>
+              </div>
+              <div class="experience-hr flex gap-1">
+                <hr />
+                <h6>Our Expertise</h6>
+              </div>
+            </div>
+            <div class="w-50 flex flex-col gap-2 mt-1">
+              <div class="flex gap-1 ex-card" data-aos="fade-up">
+                <div class="flex flex-center">
+                  <h3>90</h3>
+                  <h3>%</h3>
+                </div>
+                <div>
+                  <h4>Creative Approach</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Est eum delectus quasi veritatis, rerum consequatur autem
+                    cupiditate consectetur.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-1 ex-card"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
+                <div class="flex flex-center">
+                  <h3>99</h3>
+                  <h3>%</h3>
+                </div>
+                <div>
+                  <h4>Guaranteed Success</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Est eum delectus quasi veritatis, rerum consequatur autem
+                    cupiditate consectetur.
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="flex gap-1 ex-card"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
+                <div class="flex flex-center">
+                  <h3>85</h3>
+                  <h3>%</h3>
+                </div>
+                <div>
+                  <h4>Brand Startegy</h4>
+                  <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Est eum delectus quasi veritatis, rerum consequatur autem
+                    cupiditate consectetur.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Work section ======== -->
+      <section class="work">
+        <div class="container p-relative">
+          <div class="work-para text-center" data-aos="fade-up">
+            <h5>HOW WE WORK</h5>
+            <h2>Our Process for Delivering Result</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              error, inventore porro molestias autem alias cum iure explicabo!
+            </p>
+          </div>
+          <div class="work-hr flex gap-1">
+            <hr />
+            <h6>Project in steps</h6>
+          </div>
+          <div class="work-line flex flex-center gap-1 flex-wrap p-relative">
+            <div data-aos="zoom-in">
+              <h2>01.</h2>
+              <h4>Make an appointment</h4>
+            </div>
+            <div data-aos="zoom-in">
+              <h2>02.</h2>
+              <h4>Meet Our Team</h4>
+            </div>
+            <div data-aos="zoom-in">
+              <h2>03.</h2>
+              <h4>Get Consultation</h4>
+            </div>
+            <div data-aos="zoom-in">
+              <h2>04.</h2>
+              <h4>Start Project</h4>
+            </div>
+          </div>
+          <div class="flex flex-center">
+            <a href="/" class="btn_hover2">Contact Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Team section ======== -->
+      <section class="team">
+        <div class="container">
+          <div class="flex team-center" data-aos="fade-up">
+            <div class="w-66">
+              <div class="flex gap-1">
+                <hr class="team-hr1" />
+                <h5>Our Team</h5>
+              </div>
+              <h2 class="mt-1">Meet Our Team of Professionals</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+                vitae natus fugiat adipisci repellendus corrupti eveniet numquam
+                nihil, non veritatis!
+              </p>
+            </div>
+            <div class="w-33 mt-15 flex flex-end">
+              <a href="/" class="btn_hover2">All members</a>
+            </div>
+          </div>
+          <div
+            class="team-slider flex mt-15"
+            data-aos="fade-right"
+            data-aos-delay="400"
+          >
+            <div class="team-img">
+              <img src="Images/slider/team-slider1.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Jane Doe</h3>
+                  <h4>Designer</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider2.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Kanti Pairi</h3>
+                  <h4>Seo Expert</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider3.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Jonny Coll</h3>
+                  <h4>Developer</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider4.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Anni Deo</h3>
+                  <h4>UI/UX</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider1.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Jane Doe</h3>
+                  <h4>Designer</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider2.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Kanti Pairi</h3>
+                  <h4>Seo Expert</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider3.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Jonny Coll</h3>
+                  <h4>Developer</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="team-img">
+              <img src="Images/slider/team-slider4.png" alt="avatar" />
+              <div class="overlay">
+                <div class="overlay_text">
+                  <h3>Anni Deo</h3>
+                  <h4>UI/UX</h4>
+                  <div class="flex flex-center gap-1">
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M41,4H9C6.24,4,4,6.24,4,9v32c0,2.76,2.24,5,5,5h32c2.76,0,5-2.24,5-5V9C46,6.24,43.76,4,41,4z M37,19h-2c-2.14,0-3,0.5-3,2 v3h5l-1,5h-4v15h-5V29h-4v-5h4v-3c0-4,2-7,6-7c2.9,0,4,1,4,1V19z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                    <a href="#">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 50 50"
+                      >
+                        <path
+                          d="M 14 3.9902344 C 8.4886661 3.9902344 4 8.4789008 4 13.990234 L 4 35.990234 C 4 41.501568 8.4886661 45.990234 14 45.990234 L 36 45.990234 C 41.511334 45.990234 46 41.501568 46 35.990234 L 46 13.990234 C 46 8.4789008 41.511334 3.9902344 36 3.9902344 L 14 3.9902344 z M 18.005859 12.033203 C 18.633859 12.060203 19.210594 12.414031 19.558594 12.957031 C 19.954594 13.575031 20.569141 14.534156 21.369141 15.785156 C 22.099141 16.926156 22.150047 18.399844 21.498047 19.589844 L 20.033203 21.673828 C 19.637203 22.237828 19.558219 22.959703 19.824219 23.595703 C 20.238219 24.585703 21.040797 26.107203 22.466797 27.533203 C 23.892797 28.959203 25.414297 29.761781 26.404297 30.175781 C 27.040297 30.441781 27.762172 30.362797 28.326172 29.966797 L 30.410156 28.501953 C 31.600156 27.849953 33.073844 27.901859 34.214844 28.630859 C 35.465844 29.430859 36.424969 30.045406 37.042969 30.441406 C 37.585969 30.789406 37.939797 31.366141 37.966797 31.994141 C 38.120797 35.558141 35.359641 37.001953 34.556641 37.001953 C 34.000641 37.001953 27.316344 37.761656 19.777344 30.222656 C 12.238344 22.683656 12.998047 15.999359 12.998047 15.443359 C 12.998047 14.640359 14.441859 11.879203 18.005859 12.033203 z"
+                          fill="#fff"
+                        ></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="team-btn" data-aos="zoom-in">
+          <div class="container flex flex-sb gap-2 flex-wrap">
+            <h4>
+              Ask A Question To Our Amazing Team, And Get, Responsive Quickly
+            </h4>
+            <a href="/" class="btn_hover2">Contact Now</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Pricing section ======== -->
+      <section class="pricing p-relative">
+        <span></span>
+        <div class="pricing-hr flex gap-1 mt-2">
+          <hr />
+          <h6>Pricing Plans</h6>
+        </div>
+        <div class="container">
+          <div class="text-center" data-aos="fade-down">
+            <h5>PRICING</h5>
+            <h2 class="mt-1">Pricing Plans</h2>
+            <p class="mt-1 mb-15">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+              vero rem vel nostrum ex numquam error quaerat. Natus!
+            </p>
+          </div>
+          <div class="pricing-card flex gap-1 mt-3 text-center">
+            <div class="flex flex-col gap-1" data-aos="fade-up">
+              <h3>BASIC</h3>
+              <h2>#24</h2>
+              <h6>SEO Audits</h6>
+              <h6>SEO Managements</h6>
+              <h6>Digital Managements</h6>
+              <h6>Site Managements</h6>
+              <a href="/" class="btn_hover1">Get started</a>
+            </div>
+            <div class="flex flex-col gap-1" data-aos="fade-down">
+              <h3>STANDARD</h3>
+              <h2>#594</h2>
+              <h6>SEO Audits</h6>
+              <h6>SEO Managements</h6>
+              <h6>Digital Managements</h6>
+              <h6>Site Managements</h6>
+              <a href="/" class="btn_hover1">Get started</a>
+            </div>
+            <div class="flex flex-col gap-1" data-aos="fade-up">
+              <h3>PREMIMUM</h3>
+              <h2>#99</h2>
+              <h6>SEO Audits</h6>
+              <h6>SEO Managements</h6>
+              <h6>Digital Managements</h6>
+              <h6>Site Managements</h6>
+              <a href="/" class="btn_hover1">Get started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== FAQ section ======== -->
+      <section class="faq p-relative">
+        <span></span>
+        <div class="container">
+          <div class="flex flex-wrap">
+            <div class="w-50 text-center" data-aos="fade-up">
+              <div class="flex gap-2">
+                <hr class="faq-hr1" />
+                <h5>FAQ</h5>
+              </div>
+              <h2 class="mt-1">Frequently Asked Questions</h2>
+              <p class="mt-1">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab
+                nobis tenetur ad. Corrupti incidunt nisi neque eum est
+                doloremque dolor.
+              </p>
+            </div>
+            <div class="w-50 mt-15">
+              <div
+                class="accordion flex flex-col gap-1"
+                id="accordionExample"
+                data-aos="fade-down"
+              >
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button flex flex-sb">
+                      WHAT KINK OF DIGITAL SERVICES DO YOU PROVIDE?
+                      <img src="Images/icon/plus.png" alt="" />
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odit atque, dolorem maiores similique officia possimus
+                      inventore earum praesentium. Ab, soluta?
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button flex flex-sb">
+                      WHAT IS YOUR PROCESS FOR WORKING WITH CLIENTS WHAT KINK OF
+                      <img src="Images/icon/plus.png" alt="" />
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odit atque, dolorem maiores similique officia possimus
+                      inventore earum praesentium. Ab, soluta?
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button flex flex-sb">
+                      WHAT IS YOUR TIMELINE FOR COMPLETEING A PROJECT?
+                      <img src="Images/icon/plus.png" alt="" />
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odit atque, dolorem maiores similique officia possimus
+                      inventore earum praesentium. Ab, soluta?
+                    </p>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button flex flex-sb">
+                      WHAT IF I'M NOT SATISFIED WITH THE WORK?
+                      <img src="Images/icon/plus.png" alt="" />
+                    </button>
+                  </h2>
+                  <div class="accordion-collapse">
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Odit atque, dolorem maiores similique officia possimus
+                      inventore earum praesentium. Ab, soluta?
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ======== Blogs section ======== -->
+      <section class="blog">
+        <div class="container">
+          <div class="flex blog-center" data-aos="fade-down">
+            <div class="w-66">
+              <div class="flex gap-1">
+                <hr class="blog-hr1" />
+                <h5>BLOGS</h5>
+              </div>
+              <h2 class="mt-1">Latest Posts</h2>
+              <p class="mt-1 mb-15">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+                quos laborum saepe, accusamus aperiam cum omnis inventore
+                molestiae!
+              </p>
+            </div>
+            <div class="w-33 mt-1 flex flex-end">
+              <a href="/" class="btn_hover2">See all blogs</a>
+            </div>
+          </div>
+          <div class="flex gap-1 mt-15 blog-cards">
+            <div class="blog-card w-100" data-aos="fade-up">
+              <img src="Images/home/blog1.png" alt="img" class="card-img-top" />
+              <div class="card-body">
+                <h4>10 Must-know digital Marketing Trands In 2023</h4>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="blog-card w-100" data-aos="fade-down">
+              <img src="Images/home/blog2.png" alt="img" class="card-img-top" />
+              <div class="card-body">
+                <h4>
+                  The Importance Of Responsive Web Design For Your Business
+                </h4>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+            <div class="blog-card w-100" data-aos="fade-up">
+              <img src="Images/home/blog3.png" alt="img" class="card-img-top" />
+              <div class="card-body">
+                <h4>How To Create A Sucessful Social Media Startegy</h4>
+                <a href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======== Footer section ======== -->
+    <footer>
+      <div class="container">
+        <div class="footer-hr flex flex-col">
+          <div class="flex gap-1" data-aos="fade-left">
+            <hr />
+            <h6>Newsletter</h6>
+          </div>
+          <h3>JOIN OUR MAILING LIST</h3>
+          <p class="text-center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+            enim iure ducimus nemo temporibus. Ipsum neque nemo iure?
+          </p>
+        </div>
+        <form
+          action="#"
+          id="footer-form"
+          class="flex flex-sb gap-2"
+          data-aos="zoom-in"
+          data-aos-delay="400"
+        >
+          <div id="footer-message"></div>
+          <input type="email" required placeholder="Enter Your Email" />
+          <button type="submit" class="btn_hover1">Get Started</button>
+        </form>
+      </div>
+      <div class="footer-menu">
+        <div class="container">
+          <div class="flex flex-start footer-center">
+            <div class="w-33 flex flex-col gap-2 flex-start p-relative">
+              <a href="/"><img src="Images/logo.png" alt="footer-logo" /></a>
+              <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Corporis, quos harum? At officiis saepe modi a libero velit.
+              </p>
+              <span class="flex gap-2"
+                ><a href="#">
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="orangeGradient"
+                        gradientTransform="rotate(42)"
+                      >
+                        <stop offset="0%" stop-color="#f57c48" />
+                        <stop offset="100%" stop-color="#fa982f" />
+                      </linearGradient>
+
+                      <linearGradient
+                        id="hoverGradient"
+                        gradientTransform="rotate(45)"
+                      >
+                        <stop offset="0%" stop-color="#7436bb" />
+                        <stop offset="100%" stop-color="#b520a3" />
+                      </linearGradient>
+                    </defs>
+                    <path
+                      class="social-icon-path"
+                      d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848
+                  c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588
+                  l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
+                      fill="url(#orangeGradient)"
+                    />
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      class="social-icon-path"
+                      d="M 16 3 C 8.83 3 3 8.83 3 16 L 3 34 C 3 41.17 8.83 47 16 47 L 34 47 C 41.17 47 47 41.17 47 34 L 47 16 C 47 8.83 41.17 3 34 3 L 16 3 z M 37 11 C 38.1 11 39 11.9 39 13 C 39 14.1 38.1 15 37 15 C 35.9 15 35 14.1 35 13 C 35 11.9 35.9 11 37 11 z M 25 14 C 31.07 14 36 18.93 36 25 C 36 31.07 31.07 36 25 36 C 18.93 36 14 31.07 14 25 C 14 18.93 18.93 14 25 14 z M 25 16 C 20.04 16 16 20.04 16 25 C 16 29.96 20.04 34 25 34 C 29.96 34 34 29.96 34 25 C 34 20.04 29.96 16 25 16 z"
+                      fill="url(#orangeGradient)"
+                    ></path>
+                  </svg>
+                </a>
+                <a href="#">
+                  <svg
+                    class="social-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 50 50"
+                  >
+                    <path
+                      class="social-icon-path"
+                      d="M 41.625 10.769531 C 37.644531 7.566406 31.347656 7.023438 31.078125 7.003906 C 30.660156 6.96875 30.261719 7.203125 30.089844 7.589844 C 30.074219 7.613281 29.9375 7.929688 29.785156 8.421875 C 32.417969 8.867188 35.652344 9.761719 38.578125 11.578125 C 39.046875 11.867188 39.191406 12.484375 38.902344 12.953125 C 38.710938 13.261719 38.386719 13.429688 38.050781 13.429688 C 37.871094 13.429688 37.6875 13.378906 37.523438 13.277344 C 32.492188 10.15625 26.210938 10 25 10 C 23.789063 10 17.503906 10.15625 12.476563 13.277344 C 12.007813 13.570313 11.390625 13.425781 11.101563 12.957031 C 10.808594 12.484375 10.953125 11.871094 11.421875 11.578125 C 14.347656 9.765625 17.582031 8.867188 20.214844 8.425781 C 20.0625 7.929688 19.925781 7.617188 19.914063 7.589844 C 19.738281 7.203125 19.34375 6.960938 18.921875 7.003906 C 18.652344 7.023438 12.355469 7.566406 8.320313 10.8125 C 6.214844 12.761719 2 24.152344 2 34 C 2 34.175781 2.046875 34.34375 2.132813 34.496094 C 5.039063 39.605469 12.972656 40.941406 14.78125 41 C 14.789063 41 14.800781 41 14.8125 41 C 15.132813 41 15.433594 40.847656 15.621094 40.589844 L 17.449219 38.074219 C 12.515625 36.800781 9.996094 34.636719 9.851563 34.507813 C 9.4375 34.144531 9.398438 33.511719 9.765625 33.097656 C 10.128906 32.683594 10.761719 32.644531 11.175781 33.007813 C 11.234375 33.0625 15.875 37 25 37 C 34.140625 37 38.78125 33.046875 38.828125 33.007813 C 39.242188 32.648438 39.871094 32.683594 40.238281 33.101563 C 40.601563 33.515625 40.5625 34.144531 40.148438 34.507813 C 40.003906 34.636719 37.484375 36.800781 32.550781 38.074219 L 34.378906 40.589844 C 34.566406 40.847656 34.867188 41 35.1875 41 C 35.199219 41 35.210938 41 35.21875 41 C 37.027344 40.941406 44.960938 39.605469 47.867188 34.496094 C 47.953125 34.34375 48 34.175781 48 34 C 48 24.152344 43.785156 12.761719 41.625 10.769531 Z M 18.5 30 C 16.566406 30 15 28.210938 15 26 C 15 23.789063 16.566406 22 18.5 22 C 20.433594 22 22 23.789063 22 26 C 22 28.210938 20.433594 30 18.5 30 Z M 31.5 30 C 29.566406 30 28 28.210938 28 26 C 28 23.789063 29.566406 22 31.5 22 C 33.433594 22 35 23.789063 35 26 C 35 28.210938 33.433594 30 31.5 30 Z"
+                      fill="url(#orangeGradient)"
+                    ></path>
+                  </svg> </a
+              ></span>
+            </div>
+            <div class="w-16 mt-1">
+              <h4>Quick Links</h4>
+              <ul class="flex flex-col gap-2 flex-start">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Blogs</a></li>
+              </ul>
+            </div>
+            <div class="w-16 mt-45 flex-end">
+              <ul class="flex flex-col gap-2 flex-start">
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            <div class="w-33 mt-1 flex flex-col flex-start">
+              <h4>Get Connected</h4>
+              <ul class="flex flex-col gap-2 flex-start">
+                <li>
+                  <a href="#"
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M21.384,17.752a2.108,2.108,0,0,1-.522,3.359,7.543,7.543,0,0,1-5.476.642C10.5,20.523,3.477,13.5,2.247,8.614a7.543,7.543,0,0,1,.642-5.476,2.108,2.108,0,0,1,3.359-.522L8.333,4.7a2.094,2.094,0,0,1,.445,2.328A3.877,3.877,0,0,1,8,8.2c-2.384,2.384,5.417,10.185,7.8,7.8a3.877,3.877,0,0,1,1.173-.781,2.092,2.092,0,0,1,2.328.445Z"
+                          fill="url(#orangeGradient)"
+                        /></svg></span
+                    >+123-456-7890</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><svg
+                        data-name="1-Email"
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 32 32"
+                      >
+                        <path
+                          d="M29 4H3a3 3 0 0 0-3 3v18a3 3 0 0 0 3 3h26a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-.72 2L16 14.77 3.72 6zM30 25a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.23l13.42 9.58a1 1 0 0 0 1.16 0L30 7.23z"
+                          fill="url(#orangeGradient)"
+                        /></svg></span
+                    >Example@gmail.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><span
+                      ><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 48 48"
+                      >
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: url(#orangeGradient);
+                            }
+                          </style>
+                        </defs>
+                        <g id="Layer_2" data-name="Layer 2">
+                          <g id="_1" data-name="1">
+                            <path
+                              class="cls-1"
+                              d="M24 48a24 24 0 1 1 24-24 24 24 0 0 1-24 24zm0-46a22 22 0 1 0 22 22A22 22 0 0 0 24 2z"
+                            />
+                            <path
+                              class="cls-1"
+                              d="M24 28a4 4 0 1 1 4-4 4 4 0 0 1-4 4zm0-6a2 2 0 1 0 2 2 2 2 0 0 0-2-2zM4 23h4v2H4zM40 23h4v2h-4zM23 4h2v4h-2zM23 40h2v4h-2z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-29.99 8.406 33)"
+                              d="M6.41 32h4v2h-4z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-29.99 39.594 15.007)"
+                              d="M37.59 14h4v2h-4z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-30 15.004 8.42)"
+                              d="M14 6.41h2v4h-2z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-30 33.013 39.586)"
+                              d="M32 37.59h2v4h-2z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-60.01 14.996 39.591)"
+                              d="M13 38.59h4v2h-4z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-60.01 29.366 14.707)"
+                              d="M21.62 13.7H37.1v2H21.62z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-60 8.41 14.994)"
+                              d="M7.41 13h2v4h-2z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-60 39.582 33.002)"
+                              d="M38.59 31h2v4h-2z"
+                            />
+                            <path
+                              class="cls-1"
+                              transform="rotate(-60 30.086 27.509)"
+                              d="M29.08 23.49h2v8.05h-2z"
+                            />
+                          </g>
+                        </g></svg></span
+                    >Office Hours: 8AM - 11PM Sunday - Weekend Day
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <div class="container flex flex-sb gap-2 flex-wrap">
+          <h6>
+            Copyright &copy; 2024 Coded By
+            <a href="/" class="p-0">Akkaracha</a>
+          </h6>
+          <h6>Powered By <b>Akkaracha</b></h6>
+        </div>
+      </div>
+    </footer>
+
+    <!-- End siter wrapper -->
+    <!-- button back to top  -->
+    <button onclick="scrollToTop()" id="backToTopBtn" class="btn_hover2">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17 13H8.414l4.293-4.293-1.414-1.414L4.586 14l6.707 6.707 1.414-1.414L8.414 15H19V4h-2v9z"
+        />
+      </svg>
+    </button>
+
+    <!-- jquery min js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- aos -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 150,
+        duration: 1250,
+        once: true,
+      });
+    </script>
+    <!-- Slick for Carousel-->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- fontawesome js -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"
+      integrity="sha512-6sSYJqDreZRZGkJ3b+YfdhB3MzmuP9R7X1QZ6g5aIXhRvR1Y/N/P47jmnkENm7YL3oqsmI6AK+V6AD99uWDnIw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Custom JS -->
+    <script src="/js/script.js"></script>
+  </body>
+</html>
